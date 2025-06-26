@@ -1,0 +1,1240 @@
+{
+    "assignments": {
+        "course1": {
+            "assignment1": {
+                "createdAt": "2025-02-15T10:00:00Z",
+                "description": "Create a React application demonstrating the component lifecycle methods with proper state management.",
+                "dueDate": "2025-03-10T23:59:59Z",
+                "id": "assignment1",
+                "title": "React Component Lifecycle",
+                "totalPoints": 100
+            },
+            "assignment2": {
+                "createdAt": "2025-02-20T14:30:00Z",
+                "description": "Implement a todo application using React hooks for state management.",
+                "dueDate": "2025-03-25T23:59:59Z",
+                "id": "assignment2",
+                "title": "State Management with Hooks",
+                "totalPoints": 100
+            },
+            "assignment3": {
+                "createdAt": "2025-03-01T09:45:00Z",
+                "description": "Create a theme switcher application using React Context API.",
+                "dueDate": "2025-04-15T23:59:59Z",
+                "id": "assignment3",
+                "title": "Context API Implementation",
+                "totalPoints": 100
+            }
+        },
+        "course2": {
+            "assignment4": {
+                "createdAt": "2025-02-18T11:20:00Z",
+                "description": "Implement a weather dashboard using async/await and fetch API.",
+                "dueDate": "2025-03-15T23:59:59Z",
+                "id": "assignment4",
+                "title": "Asynchronous JavaScript",
+                "totalPoints": 100
+            },
+            "assignment5": {
+                "createdAt": "2025-03-05T13:15:00Z",
+                "description": "Refactor legacy JavaScript code using modern ES6+ features.",
+                "dueDate": "2025-04-05T23:59:59Z",
+                "id": "assignment5",
+                "title": "ES6+ Features",
+                "totalPoints": 100
+            }
+        },
+        "course3": {
+            "assignment6": {
+                "createdAt": "2025-02-25T15:40:00Z",
+                "description": "Create detailed user personas for an e-commerce application.",
+                "dueDate": "2025-03-20T23:59:59Z",
+                "id": "assignment6",
+                "title": "User Persona Development",
+                "totalPoints": 100
+            },
+            "assignment7": {
+                "createdAt": "2025-03-10T10:30:00Z",
+                "description": "Design a responsive website with mobile-first approach.",
+                "dueDate": "2025-04-10T23:59:59Z",
+                "id": "assignment7",
+                "title": "Responsive Design Prototype",
+                "totalPoints": 100
+            }
+        },
+        "course4": {
+            "assignment8": {
+                "createdAt": "2025-03-01T08:50:00Z",
+                "description": "Create a Node.js RESTful API with Express and MongoDB integration.",
+                "dueDate": "2025-03-30T23:59:59Z",
+                "id": "assignment8",
+                "title": "RESTful API Development",
+                "totalPoints": 100
+            },
+            "assignment9": {
+                "createdAt": "2025-03-15T16:20:00Z",
+                "description": "Implement JWT authentication for a Node.js application.",
+                "dueDate": "2025-04-20T23:59:59Z",
+                "id": "assignment9",
+                "title": "Authentication System",
+                "totalPoints": 100
+            }
+        }
+    },
+    "courseStats": {
+        "course1": {
+            "assignmentCompletion": 86.5,
+            "averageGrade": 86.7,
+            "gradeDistribution": {
+                "60-69": 0,
+                "70-79": 1,
+                "80-89": 3,
+                "90-100": 2,
+                "below-60": 0
+            },
+            "highestGrade": 95,
+            "lowestGrade": 78,
+            "studentEngagement": 92.3
+        },
+        "course2": {
+            "assignmentCompletion": 94.8,
+            "averageGrade": 90.3,
+            "gradeDistribution": {
+                "60-69": 0,
+                "70-79": 0,
+                "80-89": 1,
+                "90-100": 2,
+                "below-60": 0
+            },
+            "highestGrade": 94,
+            "lowestGrade": 86,
+            "studentEngagement": 88.7
+        },
+        "course3": {
+            "assignmentCompletion": 96.2,
+            "averageGrade": 92,
+            "gradeDistribution": {
+                "60-69": 0,
+                "70-79": 0,
+                "80-89": 1,
+                "90-100": 2,
+                "below-60": 0
+            },
+            "highestGrade": 96,
+            "lowestGrade": 88,
+            "studentEngagement": 91.5
+        },
+        "course4": {
+            "assignmentCompletion": 92.7,
+            "averageGrade": 90.3,
+            "gradeDistribution": {
+                "60-69": 0,
+                "70-79": 0,
+                "80-89": 2,
+                "90-100": 1,
+                "below-60": 0
+            },
+            "highestGrade": 95,
+            "lowestGrade": 87,
+            "studentEngagement": 89.3
+        }
+    },
+    "courses": {
+        "featured": {
+            "course1": {
+                "code": "CS301",
+                "coverImage": "<https://almablog-media.s3.ap-south-1.amazonaws.com/React_Fundamentals_56e32fd939.png>",
+                "createdAt": "2025-01-15T08:00:00Z",
+                "credits": 3,
+                "description": "Introduction to React, component lifecycle, and state management",
+                "id": "course1",
+                "instructor": "Chandra Shekhar",
+                "name": "React Fundamentals",
+                "term": "Spring 2025"
+            },
+            "course2": {
+                "code": "CS205",
+                "coverImage": "<https://www.sipexe.com/assets/courses/Adavaced_JavaScript.png>",
+                "createdAt": "2025-01-18T09:30:00Z",
+                "credits": 4,
+                "description": "Deep dive into JavaScript patterns, async programming, and ES6+ features",
+                "id": "course2",
+                "instructor": "Shreshth Kumar",
+                "name": "Advanced JavaScript",
+                "term": "Spring 2025"
+            },
+            "course3": {
+                "code": "DS100",
+                "coverImage": "<https://www.guvi.in/blog/wp-content/uploads/2023/12/top_12_key_ui_ux_design_principles.webp>",
+                "createdAt": "2025-01-20T14:15:00Z",
+                "credits": 3,
+                "description": "Fundamentals of user interface design and user experience",
+                "id": "course3",
+                "instructor": "Ankit Kumar",
+                "name": "UI/UX Design Principles",
+                "term": "Spring 2025"
+            },
+            "course4": {
+                "code": "CS405",
+                "coverImage": "<https://existek3-838c.kxcdn.com/wp-content/uploads/2020/07/001-1-768x401-1.webp>",
+                "createdAt": "2025-01-22T11:45:00Z",
+                "credits": 4,
+                "description": "Server-side JavaScript, RESTful APIs, and database integration",
+                "id": "course4",
+                "instructor": "VenuGopal Burli",
+                "name": "Backend Development with Node.js",
+                "term": "Spring 2025"
+            }
+        },
+        "SkillBased": {
+            "course5": {
+                "code": "CS501",
+                "coverImage": "<https://thedigitaladda.com/wp-content/uploads/Data-Structure-Algorithms.png>",
+                "createdAt": "2025-01-24T10:00:00Z",
+                "credits": 3,
+                "description": "Introduction to data structures and algorithms",
+                "id": "course5",
+                "instructor": "Nitin Kumar Singh",
+                "name": "Data Structures and Algorithms",
+                "term": "Spring 2025"
+            },
+            "course6": {
+                "code": "CS502",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTflaFD8Mnn2JJOzbvg8sAwlsmQAkY13vJVbA&s>",
+                "createdAt": "2025-01-26T12:30:00Z",
+                "credits": 4,
+                "description": "Advanced data structures and algorithms",
+                "id": "course6",
+                "instructor": "VenuGopal Punchmarthi",
+                "name": "Advanced Data Structures and Algorithms",
+                "term": "Spring 2025"
+            },
+            "course7": {
+                "code": "CS503",
+                "coverImage": "<https://media.licdn.com/dms/image/v2/C4E12AQFgF8Qwpczuvw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1606124021682?e=2147483647&v=beta&t=U2bRNiHpP6T72jYpI3QhbtAHhWsL5hVEaivbEkrCBZg>",
+                "createdAt": "2025-01-28T14:45:00Z",
+                "credits": 3,
+                "description": "Introduction to machine learning",
+                "id": "course7",
+                "instructor": "Varun Bhatt",
+                "name": "Machine Learning Fundamentals"
+            },
+            "course8": {
+                "code": "CS504",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6R981k_O5XSjItQBtQZRk4fZWohhPu-x99g&s>",
+                "createdAt": "2025-01-30T16:20:00Z",
+                "credits": 4,
+                "description": "Advanced machine learning",
+                "id": "course8",
+                "instructor": "Varun Bhatt",
+                "name": "Advanced Machine Learning Techniques",
+                "term": "Spring 2025"
+            }
+        },
+        "TopRated": {
+            "course1": {
+                "code": "CS501",
+                "coverImage": "<https://thedigitaladda.com/wp-content/uploads/Data-Structure-Algorithms.png>",
+                "createdAt": "2025-01-24T10:00:00Z",
+                "credits": 3,
+                "description": "Introduction to data structures and algorithms",
+                "id": "course5",
+                "instructor": "Nitin Kumar Singh",
+                "name": "Data Structures and Algorithms",
+                "term": "Spring 2025"
+            },
+            "course2": {
+                "code": "CS502",
+                "coverImage": "<https://www.sparxitsolutions.com/blog/wp-content/uploads/2019/07/all-about-react-native-apps.png>",
+                "createdAt": "2025-01-26T12:30:00Z",
+                "credits": 4,
+                "description": "React Native development and mobile app design",
+                "id": "course6",
+                "instructor": "Subrata Das",
+                "name": "Mobile App Development with React Native",
+                "term": "Spring 2025"
+            },
+            "course3": {
+                "code": "CS503",
+                "coverImage": "<https://miro.medium.com/v2/resize:fit:680/1*C4yGTDSLSz86TCakrza2HQ.jpeg>",
+                "createdAt": "2025-01-28T14:45:00Z",
+                "credits": 3,
+                "description": "React Fundamentals, component lifecycle, and state management",
+                "id": "course7",
+                "instructor": "Chandra Shekhar",
+                "name": "React Fundamentals",
+                "term": "Spring 2025"
+            },
+            "course4": {
+                "code": "CS504",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6R981k_O5XSjItQBtQZRk4fZWohhPu-x99g&s>",
+                "createdAt": "2025-01-30T16:20:00Z",
+                "credits": 4,
+                "description": "Advanced machine learning",
+                "id": "course8",
+                "instructor": "Varun Bhatt",
+                "name": "Advanced Machine Learning Techniques",
+                "term": "Spring 2025"
+            }
+        },
+        "MostPopular": {
+            "course4": {
+                "code": "CS504",
+                "coverImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6R981k_O5XSjItQBtQZRk4fZWohhPu-x99g&s",
+                "createdAt": "2025-01-30T16:20:00Z",
+                "credits": 4,
+                "description": "Advanced machine learning",
+                "id": "course8",
+                "instructor": "Varun Bhatt",
+                "name": "Advanced Machine Learning Techniques",
+                "term": "Spring 2025"
+            },
+            "course5": {
+                "code": "CS505",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDIBdCFtNs55pcQEH5PRuVf7qLpmbM8EM6hQ&s>",
+                "createdAt": "2025-02-01T09:00:00Z",
+                "credits": 3,
+                "description": "Introduction to deep learning",
+                "id": "course9",
+                "instructor": "Nitin Kumar Singh",
+                "name": "Deep Learning Basics",
+                "term": "Spring 2025"
+            },
+            "course6": {
+                "code": "CS506",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm0dcDu4rT6kICIBZwEeiTY7Mp__gtml0_hQ&s>",
+                "createdAt": "2025-02-03T11:30:00Z",
+                "credits": 4,
+                "description": "Advanced deep learning techniques",
+                "id": "course10",
+                "instructor": "Nitin Kumar Singh",
+                "name": "Advanced Deep Learning",
+                "term": "Spring 2025"
+            },
+            "course7": {
+                "code": "CS507",
+                "coverImage": "<https://miro.medium.com/v2/resize:fit:1200/1*zORAxCKoI6RglByVqt6jmg.png>",
+                "createdAt": "2025-02-05T13:45:00Z",
+                "credits": 3,
+                "description": "Introduction to natural language processing",
+                "id": "course11",
+                "instructor": "Chandra Shekhar",
+                "name": "Natural Language Processing Basics",
+                "term": "Spring 2025"
+            }
+        },
+        "NewArrivals": {
+            "course8": {
+                "code": "CS508",
+                "coverImage": "<https://d3lkc3n5th01x7.cloudfront.net/wp-content/uploads/2024/04/18095229/computer-vision-banner.png>",
+                "createdAt": "2025-02-07T10:00:00Z",
+                "credits": 4,
+                "description": "Introduction to computer vision",
+                "id": "course12",
+                "instructor": "Ankit Kumar",
+                "name": "Computer Vision Basics",
+                "term": "Spring 2025"
+            },
+            "course9": {
+                "code": "CS509",
+                "coverImage": "<https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/22606/images/cc5f25f-adb8-6582-e857-b1e6d164f5_Blog-Banner-Computer-Vision.webp>",
+                "createdAt": "2025-02-09T12:30:00Z",
+                "credits": 3,
+                "description": "Advanced computer vision techniques",
+                "id": "course13",
+                "instructor": "Ankit Kumar",
+                "name": "Advanced Computer Vision",
+                "term": "Spring 2025"
+            },
+            "course10": {
+                "code": "CS510",
+                "coverImage": "<https://images.ctfassets.net/xjan103pcp94/3su83sKnDVpzt0r1OJO1DD/8a59845c574723c1b9ec0d5ebf9cacc4/Blog_-_intro_reinforcement_10.png>",
+                "createdAt": "2025-02-11T14:45:00Z",
+                "credits": 4,
+                "description": "Introduction to reinforcement learning",
+                "id": "course14",
+                "instructor": "Pranav Kumar",
+                "name": "Reinforcement Learning Basics",
+                "term": "Spring 2025"
+            },
+            "course11": {
+                "code": "CS511",
+                "coverImage": "<https://static.wixstatic.com/media/f376fd_ac07133b56b84ea8ae58c6f04e476474~mv2.png/v1/fill/w_568,h_298,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f376fd_ac07133b56b84ea8ae58c6f04e476474~mv2.png>",
+                "createdAt": "2025-02-13T16:20:00Z",
+                "credits": 3,
+                "description": "Advanced reinforcement learning techniques",
+                "id": "course15",
+                "instructor": "Pranav Kumar",
+                "name": "Advanced Reinforcement Learning",
+                "term": "Spring 2025"
+            }
+        },
+        "Recommended": {
+            "course12": {
+                "code": "CS512",
+                "coverImage": "<https://www.mctimothyassociates.com/wp-content/uploads/2019/12/Big-data.jpg>",
+                "createdAt": "2025-02-15T10:00:00Z",
+                "credits": 4,
+                "description": "Introduction to big data technologies",
+                "id": "course16",
+                "instructor": "Varun Bhatt",
+                "name": "Big Data Fundamentals",
+                "term": "Spring 2025"
+            },
+            "course13": {
+                "code": "CS513",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9S4y8laftKm6a1s-e_wwH2SBjMz0FMXKqoA&s>",
+                "createdAt": "2025-02-17T12:30:00Z",
+                "credits": 3,
+                "description": "Advanced big data analytics",
+                "id": "course17",
+                "instructor": "Varun Bhatt",
+                "name": "Advanced Big Data Analytics",
+                "term": "Spring 2025"
+            },
+            "course14": {
+                "code": "CS514",
+                "coverImage": "<https://techsparks.co.in/wp-content/uploads/2021/01/Cloud-computing.jpg>",
+                "createdAt": "2025-02-19T14:45:00Z",
+                "credits": 4,
+                "description": "Introduction to cloud computing",
+                "id": "course18",
+                "instructor": "Nitin Kumar Singh",
+                "name": "Cloud Computing Basics",
+                "term": "Spring 2025"
+            },
+            "course15": {
+                "code": "CS515",
+                "coverImage": "<https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZmqgZec0Y5lBCiQX6qhWs69Q52gfk-QJ5Br3LnDiLYhMXB7uQSR89GbAh1PMmsV7jvDU&usqp=CAU>",
+                "createdAt": "2025-02-21T16:20:00Z",
+                "credits": 4,
+                "description": "Introduction to DevOps practices",
+                "id": "course19",
+                "instructor": "Nitin Kumar Singh",
+                "name": "DevOps Fundamentals",
+                "term": "Spring 2025"
+            }
+        }
+    },
+    
+    "enrollments": {
+        "course1": {
+            "student1": true,
+            "student2": true,
+            "student3": true,
+            "student4": true
+        },
+        "course2": {
+            "student1": true,
+            "student2": true,
+            "student5": true
+        },
+        "course3": {
+            "student3": true,
+            "student4": true,
+            "student5": true
+        },
+        "course4": {
+            "student1": true,
+            "student4": true,
+            "student5": true
+        }
+    },
+    "grades": {
+        "assignment1": {
+            "student1": {
+                "feedback": "Excellent work on component lifecycle implementation. Clean code and good documentation.",
+                "gradedOn": "2025-03-12T10:15:22Z",
+                "score": 92,
+                "submittedOn": "2025-03-09T14:25:30Z"
+            },
+            "student2": {
+                "feedback": "Good understanding of lifecycle methods. Could improve code organization.",
+                "gradedOn": "2025-03-12T11:30:45Z",
+                "score": 85,
+                "submittedOn": "2025-03-08T23:50:12Z"
+            },
+            "student3": {
+                "feedback": "Correct implementation but lacks comprehensive comments. UI could be improved.",
+                "gradedOn": "2025-03-13T09:05:18Z",
+                "score": 78,
+                "submittedOn": "2025-03-10T22:15:33Z"
+            },
+            "student4": {
+                "feedback": "Outstanding work! Creative approach and excellent code structure.",
+                "gradedOn": "2025-03-11T14:20:10Z",
+                "score": 95,
+                "submittedOn": "2025-03-07T18:30:55Z"
+            }
+        },
+        "assignment2": {
+            "student1": {
+                "feedback": "Good implementation of hooks. Consider using useReducer for complex state.",
+                "gradedOn": "2025-03-27T15:35:28Z",
+                "score": 88,
+                "submittedOn": "2025-03-24T20:10:15Z"
+            },
+            "student2": {
+                "feedback": "Very clean implementation of useState and useEffect. Well-structured code.",
+                "gradedOn": "2025-03-27T16:40:33Z",
+                "score": 90,
+                "submittedOn": "2025-03-23T19:45:22Z"
+            },
+            "student3": {
+                "feedback": "Good functionality but could improve code reusability with custom hooks.",
+                "gradedOn": "2025-03-28T10:25:15Z",
+                "score": 82,
+                "submittedOn": "2025-03-25T21:30:40Z"
+            }
+        },
+        "assignment4": {
+            "student1": {
+                "feedback": "Excellent error handling and clean async/await implementation.",
+                "gradedOn": "2025-03-17T11:45:20Z",
+                "score": 94,
+                "submittedOn": "2025-03-14T16:20:30Z"
+            },
+            "student2": {
+                "feedback": "Good API integration. Consider adding more loading states for better UX.",
+                "gradedOn": "2025-03-17T13:15:50Z",
+                "score": 86,
+                "submittedOn": "2025-03-13T22:10:45Z"
+            },
+            "student5": {
+                "feedback": "Very good implementation. Creative UI and solid error handling.",
+                "gradedOn": "2025-03-18T09:30:25Z",
+                "score": 91,
+                "submittedOn": "2025-03-15T18:05:12Z"
+            }
+        },
+        "assignment6": {
+            "student3": {
+                "feedback": "Outstanding personas with detailed research backing. Excellent presentation.",
+                "gradedOn": "2025-03-22T10:15:18Z",
+                "score": 96,
+                "submittedOn": "2025-03-19T14:30:22Z"
+            },
+            "student4": {
+                "feedback": "Well-developed personas. Could use more quantitative data to support assumptions.",
+                "gradedOn": "2025-03-22T11:50:45Z",
+                "score": 88,
+                "submittedOn": "2025-03-18T23:45:30Z"
+            },
+            "student5": {
+                "feedback": "Very thorough research and excellent presentation of personas.",
+                "gradedOn": "2025-03-23T13:25:10Z",
+                "score": 92,
+                "submittedOn": "2025-03-20T20:10:15Z"
+            }
+        },
+        "assignment8": {
+            "student1": {
+                "feedback": "Good API design and documentation. Consider adding more validation.",
+                "gradedOn": "2025-04-02T14:20:15Z",
+                "score": 89,
+                "submittedOn": "2025-03-29T17:45:30Z"
+            },
+            "student4": {
+                "feedback": "Excellent implementation with comprehensive error handling and tests.",
+                "gradedOn": "2025-04-02T15:30:20Z",
+                "score": 95,
+                "submittedOn": "2025-03-28T22:30:10Z"
+            },
+            "student5": {
+                "feedback": "Solid API with good structure. Could improve database queries for performance.",
+                "gradedOn": "2025-04-03T10:45:25Z",
+                "score": 87,
+                "submittedOn": "2025-03-30T19:15:45Z"
+            }
+        }
+    },
+    "plateform": {
+        "assignments": {
+            "course1": {
+                "assignment1": {
+                    "createdAt": "2025-02-15T10:00:00Z",
+                    "description": "Create a React application demonstrating the component lifecycle methods with proper state management.",
+                    "dueDate": "2025-03-10T23:59:59Z",
+                    "id": "assignment1",
+                    "title": "React Component Lifecycle",
+                    "totalPoints": 100
+                },
+                "assignment2": {
+                    "createdAt": "2025-02-20T14:30:00Z",
+                    "description": "Implement a todo application using React hooks for state management.",
+                    "dueDate": "2025-03-25T23:59:59Z",
+                    "id": "assignment2",
+                    "title": "State Management with Hooks",
+                    "totalPoints": 100
+                },
+                "assignment3": {
+                    "createdAt": "2025-03-01T09:45:00Z",
+                    "description": "Create a theme switcher application using React Context API.",
+                    "dueDate": "2025-04-15T23:59:59Z",
+                    "id": "assignment3",
+                    "title": "Context API Implementation",
+                    "totalPoints": 100
+                }
+            },
+            "course2": {
+                "assignment4": {
+                    "createdAt": "2025-02-18T11:20:00Z",
+                    "description": "Implement a weather dashboard using async/await and fetch API.",
+                    "dueDate": "2025-03-15T23:59:59Z",
+                    "id": "assignment4",
+                    "title": "Asynchronous JavaScript",
+                    "totalPoints": 100
+                },
+                "assignment5": {
+                    "createdAt": "2025-03-05T13:15:00Z",
+                    "description": "Refactor legacy JavaScript code using modern ES6+ features.",
+                    "dueDate": "2025-04-05T23:59:59Z",
+                    "id": "assignment5",
+                    "title": "ES6+ Features",
+                    "totalPoints": 100
+                }
+            },
+            "course3": {
+                "assignment6": {
+                    "createdAt": "2025-02-25T15:40:00Z",
+                    "description": "Create detailed user personas for an e-commerce application.",
+                    "dueDate": "2025-03-20T23:59:59Z",
+                    "id": "assignment6",
+                    "title": "User Persona Development",
+                    "totalPoints": 100
+                },
+                "assignment7": {
+                    "createdAt": "2025-03-10T10:30:00Z",
+                    "description": "Design a responsive website with mobile-first approach.",
+                    "dueDate": "2025-04-10T23:59:59Z",
+                    "id": "assignment7",
+                    "title": "Responsive Design Prototype",
+                    "totalPoints": 100
+                }
+            },
+            "course4": {
+                "assignment8": {
+                    "createdAt": "2025-03-01T08:50:00Z",
+                    "description": "Create a Node.js RESTful API with Express and MongoDB integration.",
+                    "dueDate": "2025-03-30T23:59:59Z",
+                    "id": "assignment8",
+                    "title": "RESTful API Development",
+                    "totalPoints": 100
+                },
+                "assignment9": {
+                    "createdAt": "2025-03-15T16:20:00Z",
+                    "description": "Implement JWT authentication for a Node.js application.",
+                    "dueDate": "2025-04-20T23:59:59Z",
+                    "id": "assignment9",
+                    "title": "Authentication System",
+                    "totalPoints": 100
+                }
+            }
+        },
+        "courseStats": {
+            "course1": {
+                "assignmentCompletion": 86.5,
+                "averageGrade": 86.7,
+                "gradeDistribution": {
+                    "60-69": 0,
+                    "70-79": 1,
+                    "80-89": 3,
+                    "90-100": 2,
+                    "below-60": 0
+                },
+                "highestGrade": 95,
+                "lowestGrade": 78,
+                "studentEngagement": 92.3
+            },
+            "course2": {
+                "assignmentCompletion": 94.8,
+                "averageGrade": 90.3,
+                "gradeDistribution": {
+                    "60-69": 0,
+                    "70-79": 0,
+                    "80-89": 1,
+                    "90-100": 2,
+                    "below-60": 0
+                },
+                "highestGrade": 94,
+                "lowestGrade": 86,
+                "studentEngagement": 88.7
+            },
+            "course3": {
+                "assignmentCompletion": 96.2,
+                "averageGrade": 92,
+                "gradeDistribution": {
+                    "60-69": 0,
+                    "70-79": 0,
+                    "80-89": 1,
+                    "90-100": 2,
+                    "below-60": 0
+                },
+                "highestGrade": 96,
+                "lowestGrade": 88,
+                "studentEngagement": 91.5
+            },
+            "course4": {
+                "assignmentCompletion": 92.7,
+                "averageGrade": 90.3,
+                "gradeDistribution": {
+                    "60-69": 0,
+                    "70-79": 0,
+                    "80-89": 2,
+                    "90-100": 1,
+                    "below-60": 0
+                },
+                "highestGrade": 95,
+                "lowestGrade": 87,
+                "studentEngagement": 89.3
+            }
+        },
+        "courses": {
+            "course1": {
+                "code": "CS301",
+                "coverImage": "<https://picsum.photos/id/0/800/300>",
+                "createdAt": "2025-01-15T08:00:00Z",
+                "credits": 3,
+                "description": "Introduction to React, component lifecycle, and state management",
+                "id": "course1",
+                "instructor": "instructor1",
+                "name": "React Fundamentals",
+                "term": "Spring 2025"
+            },
+            "course2": {
+                "code": "CS205",
+                "coverImage": "<https://picsum.photos/id/1/800/300>",
+                "createdAt": "2025-01-18T09:30:00Z",
+                "credits": 4,
+                "description": "Deep dive into JavaScript patterns, async programming, and ES6+ features",
+                "id": "course2",
+                "instructor": "instructor1",
+                "name": "Advanced JavaScript",
+                "term": "Spring 2025"
+            },
+            "course3": {
+                "code": "DS100",
+                "coverImage": "<https://picsum.photos/id/2/800/300>",
+                "createdAt": "2025-01-20T14:15:00Z",
+                "credits": 3,
+                "description": "Fundamentals of user interface design and user experience",
+                "id": "course3",
+                "instructor": "instructor2",
+                "name": "UI/UX Design Principles",
+                "term": "Spring 2025"
+            },
+            "course4": {
+                "code": "CS405",
+                "coverImage": "<https://picsum.photos/id/3/800/300>",
+                "createdAt": "2025-01-22T11:45:00Z",
+                "credits": 4,
+                "description": "Server-side JavaScript, RESTful APIs, and database integration",
+                "id": "course4",
+                "instructor": "instructor2",
+                "name": "Backend Development with Node.js",
+                "term": "Spring 2025"
+            }
+        },
+        "enrollments": {
+            "course1": {
+                "student1": true,
+                "student2": true,
+                "student3": true,
+                "student4": true
+            },
+            "course2": {
+                "student1": true,
+                "student2": true,
+                "student5": true
+            },
+            "course3": {
+                "student3": true,
+                "student4": true,
+                "student5": true
+            },
+            "course4": {
+                "student1": true,
+                "student4": true,
+                "student5": true
+            }
+        },
+        "grades": {
+            "assignment1": {
+                "student1": {
+                    "feedback": "Excellent work on component lifecycle implementation. Clean code and good documentation.",
+                    "gradedOn": "2025-03-12T10:15:22Z",
+                    "score": 92,
+                    "submittedOn": "2025-03-09T14:25:30Z"
+                },
+                "student2": {
+                    "feedback": "Good understanding of lifecycle methods. Could improve code organization.",
+                    "gradedOn": "2025-03-12T11:30:45Z",
+                    "score": 85,
+                    "submittedOn": "2025-03-08T23:50:12Z"
+                },
+                "student3": {
+                    "feedback": "Correct implementation but lacks comprehensive comments. UI could be improved.",
+                    "gradedOn": "2025-03-13T09:05:18Z",
+                    "score": 78,
+                    "submittedOn": "2025-03-10T22:15:33Z"
+                },
+                "student4": {
+                    "feedback": "Outstanding work! Creative approach and excellent code structure.",
+                    "gradedOn": "2025-03-11T14:20:10Z",
+                    "score": 95,
+                    "submittedOn": "2025-03-07T18:30:55Z"
+                }
+            },
+            "assignment2": {
+                "student1": {
+                    "feedback": "Good implementation of hooks. Consider using useReducer for complex state.",
+                    "gradedOn": "2025-03-27T15:35:28Z",
+                    "score": 88,
+                    "submittedOn": "2025-03-24T20:10:15Z"
+                },
+                "student2": {
+                    "feedback": "Very clean implementation of useState and useEffect. Well-structured code.",
+                    "gradedOn": "2025-03-27T16:40:33Z",
+                    "score": 90,
+                    "submittedOn": "2025-03-23T19:45:22Z"
+                },
+                "student3": {
+                    "feedback": "Good functionality but could improve code reusability with custom hooks.",
+                    "gradedOn": "2025-03-28T10:25:15Z",
+                    "score": 82,
+                    "submittedOn": "2025-03-25T21:30:40Z"
+                }
+            },
+            "assignment4": {
+                "student1": {
+                    "feedback": "Excellent error handling and clean async/await implementation.",
+                    "gradedOn": "2025-03-17T11:45:20Z",
+                    "score": 94,
+                    "submittedOn": "2025-03-14T16:20:30Z"
+                },
+                "student2": {
+                    "feedback": "Good API integration. Consider adding more loading states for better UX.",
+                    "gradedOn": "2025-03-17T13:15:50Z",
+                    "score": 86,
+                    "submittedOn": "2025-03-13T22:10:45Z"
+                },
+                "student5": {
+                    "feedback": "Very good implementation. Creative UI and solid error handling.",
+                    "gradedOn": "2025-03-18T09:30:25Z",
+                    "score": 91,
+                    "submittedOn": "2025-03-15T18:05:12Z"
+                }
+            },
+            "assignment6": {
+                "student3": {
+                    "feedback": "Outstanding personas with detailed research backing. Excellent presentation.",
+                    "gradedOn": "2025-03-22T10:15:18Z",
+                    "score": 96,
+                    "submittedOn": "2025-03-19T14:30:22Z"
+                },
+                "student4": {
+                    "feedback": "Well-developed personas. Could use more quantitative data to support assumptions.",
+                    "gradedOn": "2025-03-22T11:50:45Z",
+                    "score": 88,
+                    "submittedOn": "2025-03-18T23:45:30Z"
+                },
+                "student5": {
+                    "feedback": "Very thorough research and excellent presentation of personas.",
+                    "gradedOn": "2025-03-23T13:25:10Z",
+                    "score": 92,
+                    "submittedOn": "2025-03-20T20:10:15Z"
+                }
+            },
+            "assignment8": {
+                "student1": {
+                    "feedback": "Good API design and documentation. Consider adding more validation.",
+                    "gradedOn": "2025-04-02T14:20:15Z",
+                    "score": 89,
+                    "submittedOn": "2025-03-29T17:45:30Z"
+                },
+                "student4": {
+                    "feedback": "Excellent implementation with comprehensive error handling and tests.",
+                    "gradedOn": "2025-04-02T15:30:20Z",
+                    "score": 95,
+                    "submittedOn": "2025-03-28T22:30:10Z"
+                },
+                "student5": {
+                    "feedback": "Solid API with good structure. Could improve database queries for performance.",
+                    "gradedOn": "2025-04-03T10:45:25Z",
+                    "score": 87,
+                    "submittedOn": "2025-03-30T19:15:45Z"
+                }
+            }
+        },
+        "studentPerformance": {
+            "student1": {
+                "assignmentCompletionRate": 95.6,
+                "attendanceRate": 92.3,
+                "courseGrades": {
+                    "course1": 90,
+                    "course2": 94,
+                    "course4": 89
+                },
+                "overallGPA": 3.84,
+                "progressOverTime": [
+                    {
+                        "grade": 85,
+                        "month": "January"
+                    },
+                    {
+                        "grade": 88,
+                        "month": "February"
+                    },
+                    {
+                        "grade": 92,
+                        "month": "March"
+                    }
+                ]
+            },
+            "student2": {
+                "assignmentCompletionRate": 90.2,
+                "attendanceRate": 88.5,
+                "courseGrades": {
+                    "course1": 87.5,
+                    "course2": 86
+                },
+                "overallGPA": 3.61,
+                "progressOverTime": [
+                    {
+                        "grade": 82,
+                        "month": "January"
+                    },
+                    {
+                        "grade": 86,
+                        "month": "February"
+                    },
+                    {
+                        "grade": 89,
+                        "month": "March"
+                    }
+                ]
+            },
+            "student3": {
+                "assignmentCompletionRate": 89.5,
+                "attendanceRate": 91.2,
+                "courseGrades": {
+                    "course1": 80,
+                    "course3": 96
+                },
+                "overallGPA": 3.58,
+                "progressOverTime": [
+                    {
+                        "grade": 78,
+                        "month": "January"
+                    },
+                    {
+                        "grade": 84,
+                        "month": "February"
+                    },
+                    {
+                        "grade": 90,
+                        "month": "March"
+                    }
+                ]
+            },
+            "student4": {
+                "assignmentCompletionRate": 98.3,
+                "attendanceRate": 96.5,
+                "courseGrades": {
+                    "course1": 95,
+                    "course3": 88,
+                    "course4": 95
+                },
+                "overallGPA": 3.92,
+                "progressOverTime": [
+                    {
+                        "grade": 90,
+                        "month": "January"
+                    },
+                    {
+                        "grade": 93,
+                        "month": "February"
+                    },
+                    {
+                        "grade": 96,
+                        "month": "March"
+                    }
+                ]
+            },
+            "student5": {
+                "assignmentCompletionRate": 94.8,
+                "attendanceRate": 93.7,
+                "courseGrades": {
+                    "course2": 91,
+                    "course3": 92,
+                    "course4": 87
+                },
+                "overallGPA": 3.76,
+                "progressOverTime": [
+                    {
+                        "grade": 85,
+                        "month": "January"
+                    },
+                    {
+                        "grade": 90,
+                        "month": "February"
+                    },
+                    {
+                        "grade": 93,
+                        "month": "March"
+                    }
+                ]
+            }
+        },
+        "users": {
+            "instructor1": {
+                "avatar": "<https://randomuser.me/api/portraits/women/1.jpg>",
+                "bio": "Ph.D. in Computer Science with 10 years of industry experience",
+                "department": "Computer Science",
+                "email": "jane.smith@university.edu",
+                "id": "instructor1",
+                "name": "Dr. Jane Smith",
+                "role": "instructor"
+            },
+            "instructor2": {
+                "avatar": "<https://randomuser.me/api/portraits/men/2.jpg>",
+                "bio": "Former UX lead at major tech companies with 15 years of experience",
+                "department": "Design & Engineering",
+                "email": "michael.johnson@university.edu",
+                "id": "instructor2",
+                "name": "Prof. Michael Johnson",
+                "role": "instructor"
+            },
+            "student1": {
+                "avatar": "<https://randomuser.me/api/portraits/women/3.jpg>",
+                "email": "alice.chen@university.edu",
+                "id": "student1",
+                "major": "Computer Science",
+                "name": "Alice Chen",
+                "role": "student",
+                "year": 3
+            },
+            "student2": {
+                "avatar": "<https://randomuser.me/api/portraits/men/4.jpg>",
+                "email": "bob.martinez@university.edu",
+                "id": "student2",
+                "major": "Web Development",
+                "name": "Bob Martinez",
+                "role": "student",
+                "year": 2
+            },
+            "student3": {
+                "avatar": "<https://randomuser.me/api/portraits/women/5.jpg>",
+                "email": "carol.wilson@university.edu",
+                "id": "student3",
+                "major": "UI/UX Design",
+                "name": "Carol Wilson",
+                "role": "student",
+                "year": 4
+            },
+            "student4": {
+                "avatar": "<https://randomuser.me/api/portraits/men/6.jpg>",
+                "email": "david.kim@university.edu",
+                "id": "student4",
+                "major": "Computer Science",
+                "name": "David Kim",
+                "role": "student",
+                "year": 3
+            },
+            "student5": {
+                "avatar": "<https://randomuser.me/api/portraits/women/7.jpg>",
+                "email": "eva.garcia@university.edu",
+                "id": "student5",
+                "major": "Web Development",
+                "name": "Eva Garcia",
+                "role": "student",
+                "year": 2
+            }
+        }
+    },
+    "studentPerformance": {
+        "student1": {
+            "assignmentCompletionRate": 95.6,
+            "attendanceRate": 92.3,
+            "courseGrades": {
+                "course1": 90,
+                "course2": 94,
+                "course4": 89
+            },
+            "overallGPA": 3.84,
+            "progressOverTime": [
+                {
+                    "grade": 85,
+                    "month": "January"
+                },
+                {
+                    "grade": 88,
+                    "month": "February"
+                },
+                {
+                    "grade": 92,
+                    "month": "March"
+                }
+            ]
+        },
+        "student2": {
+            "assignmentCompletionRate": 90.2,
+            "attendanceRate": 88.5,
+            "courseGrades": {
+                "course1": 87.5,
+                "course2": 86
+            },
+            "overallGPA": 3.61,
+            "progressOverTime": [
+                {
+                    "grade": 82,
+                    "month": "January"
+                },
+                {
+                    "grade": 86,
+                    "month": "February"
+                },
+                {
+                    "grade": 89,
+                    "month": "March"
+                }
+            ]
+        },
+        "student3": {
+            "assignmentCompletionRate": 89.5,
+            "attendanceRate": 91.2,
+            "courseGrades": {
+                "course1": 80,
+                "course3": 96
+            },
+            "overallGPA": 3.58,
+            "progressOverTime": [
+                {
+                    "grade": 78,
+                    "month": "January"
+                },
+                {
+                    "grade": 84,
+                    "month": "February"
+                },
+                {
+                    "grade": 90,
+                    "month": "March"
+                }
+            ]
+        },
+        "student4": {
+            "assignmentCompletionRate": 98.3,
+            "attendanceRate": 96.5,
+            "courseGrades": {
+                "course1": 95,
+                "course3": 88,
+                "course4": 95
+            },
+            "overallGPA": 3.92,
+            "progressOverTime": [
+                {
+                    "grade": 90,
+                    "month": "January"
+                },
+                {
+                    "grade": 93,
+                    "month": "February"
+                },
+                {
+                    "grade": 96,
+                    "month": "March"
+                }
+            ]
+        },
+        "student5": {
+            "assignmentCompletionRate": 94.8,
+            "attendanceRate": 93.7,
+            "courseGrades": {
+                "course2": 91,
+                "course3": 92,
+                "course4": 87
+            },
+            "overallGPA": 3.76,
+            "progressOverTime": [
+                {
+                    "grade": 85,
+                    "month": "January"
+                },
+                {
+                    "grade": 90,
+                    "month": "February"
+                },
+                {
+                    "grade": 93,
+                    "month": "March"
+                }
+            ]
+        }
+    },
+    "users": {
+        "instructor1": {
+            "avatar": "<https://randomuser.me/api/portraits/women/1.jpg>",
+            "bio": "Ph.D. in Computer Science with 10 years of industry experience",
+            "department": "Computer Science",
+            "email": "jane.smith@university.edu",
+            "id": "instructor1",
+            "name": "Dr. Jane Smith",
+            "role": "instructor"
+        },
+        "instructor2": {
+            "avatar": "<https://randomuser.me/api/portraits/men/2.jpg>",
+            "bio": "Former UX lead at major tech companies with 15 years of experience",
+            "department": "Design & Engineering",
+            "email": "michael.johnson@university.edu",
+            "id": "instructor2",
+            "name": "Prof. Michael Johnson",
+            "role": "instructor"
+        },
+        "student1": {
+            "avatar": "<https://randomuser.me/api/portraits/women/3.jpg>",
+            "email": "alice.chen@university.edu",
+            "id": "student1",
+            "major": "Computer Science",
+            "name": "Alice Chen",
+            "role": "student",
+            "year": 3
+        },
+        "student2": {
+            "avatar": "<https://randomuser.me/api/portraits/men/4.jpg>",
+            "email": "bob.martinez@university.edu",
+            "id": "student2",
+            "major": "Web Development",
+            "name": "Bob Martinez",
+            "role": "student",
+            "year": 2
+        },
+        "student3": {
+            "avatar": "<https://randomuser.me/api/portraits/women/5.jpg>",
+            "email": "carol.wilson@university.edu",
+            "id": "student3",
+            "major": "UI/UX Design",
+            "name": "Carol Wilson",
+            "role": "student",
+            "year": 4
+        },
+        "student4": {
+            "avatar": "<https://randomuser.me/api/portraits/men/6.jpg>",
+            "email": "david.kim@university.edu",
+            "id": "student4",
+            "major": "Computer Science",
+            "name": "David Kim",
+            "role": "student",
+            "year": 3
+        },
+        "student5": {
+            "avatar": "<https://randomuser.me/api/portraits/women/7.jpg>",
+            "email": "eva.garcia@university.edu",
+            "id": "student5",
+            "major": "Web Development",
+            "name": "Eva Garcia",
+            "role": "student",
+            "year": 2
+        }
+    }
+}
