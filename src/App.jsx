@@ -94,7 +94,7 @@ function MainTabs() {
 
           return <Icon name={iconName} size={size} color={color} />;
         },
-        tabBarActiveTintColor: '#34A853',
+        tabBarActiveTintColor: '#68a8e3',
         tabBarInactiveTintColor: 'gray',
       })}
     >
