@@ -23,10 +23,10 @@ export default function ProfileScreen({ navigation }) {
   const [editing, setEditing] = useState(false);
   const [cameraVisible, setCameraVisible] = useState(false);
 
+  const [name, setName] = useState('');
   const [dob, setDob] = useState('');
   const [branch, setBranch] = useState('');
   const [course, setCourse] = useState('');
-  const [total, setTotal] = useState('');
   const [photoUri, setPhotoUri] = useState('');
 
   const fetchProfile = async () => {
@@ -35,10 +35,10 @@ export default function ProfileScreen({ navigation }) {
       const snapshot = await database().ref(`/users/${user.uid}`).once('value');
       const data = snapshot.val();
       setProfile(data);
+      setName(data?.name || user.displayName || user.email);
       setDob(data?.dob || '');
       setBranch(data?.branch || '');
       setCourse(data?.course || '');
-      setTotal(data?.total?.toString() || '');
       setPhotoUri(data?.photo || '');
       setLoading(false);
     }
@@ -58,11 +58,10 @@ export default function ProfileScreen({ navigation }) {
     if (!user) return;
 
     const updatedData = {
-      name: user.displayName || user.email,
+      name,
       dob,
       branch,
       course,
-      total: parseInt(total) || 0,
       photo: photoUri,
     };
 
@@ -79,10 +78,8 @@ export default function ProfileScreen({ navigation }) {
 
     useEffect(() => {
       (async () => {
-        const cameraStatus = await Camera.requestCameraPermission();
-        if (cameraStatus === 'authorized') {
-          setHasPermission(true);
-        }
+        const status = await Camera.requestCameraPermission();
+        if (status === 'authorized') setHasPermission(true);
 
         if (Platform.OS === 'android') {
           const granted = await PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.CAMERA);
@@ -93,35 +90,30 @@ export default function ProfileScreen({ navigation }) {
       })();
     }, []);
 
-    if (!device || !hasPermission) return (
-      <View style={{ alignItems: 'center', marginTop: 20 }}>
-        <Text style={{ marginBottom: 10 }}>Camera not available or permission denied</Text>
-        <TouchableOpacity onPress={handleImagePick} style={styles.uploadBtn}>
-          <Text style={{ color: '#fff' }}>Upload from Gallery</Text>
-        </TouchableOpacity>
-      </View>
-    );
+    if (!device || !hasPermission)
+      return (
+        <View style={{ alignItems: 'center', marginTop: 20 }}>
+          <Text style={{ marginBottom: 10 }}>Camera not available or permission denied</Text>
+          <TouchableOpacity onPress={handleImagePick} style={styles.uploadBtn}>
+            <Text style={{ color: '#fff' }}>Upload from Gallery</Text>
+          </TouchableOpacity>
+        </View>
+      );
 
     const takePhoto = async () => {
       try {
-        const photoData = await cameraRef.current.takePhoto();
-        const uri = `file://${photoData.path}`;
+        const photo = await cameraRef.current.takePhoto();
+        const uri = `file://${photo.path}`;
         onCapture(uri);
         setCameraVisible(false);
       } catch (e) {
-        console.error('takePhoto error:', e);
+        console.error('Camera error:', e);
       }
     };
 
     return (
       <View style={{ width: '100%', height: 400, borderRadius: 10, overflow: 'hidden', marginTop: 20 }}>
-        <Camera
-          ref={cameraRef}
-          style={{ flex: 1 }}
-          device={device}
-          isActive={true}
-          photo={true}
-        />
+        <Camera ref={cameraRef} style={{ flex: 1 }} device={device} isActive={true} photo={true} />
         <TouchableOpacity style={styles.captureBtn} onPress={takePhoto}>
           <Icon name="camera-alt" size={24} color="#fff" />
         </TouchableOpacity>
@@ -152,11 +144,11 @@ export default function ProfileScreen({ navigation }) {
           </TouchableOpacity>
         </View>
 
-        <Text style={styles.name}>{profile?.name}</Text>
+        <Text style={styles.name}>{profile?.name || name}</Text>
         <Text style={styles.info}>Branch: {profile?.branch}</Text>
         <Text style={styles.info}>Course: {profile?.course}</Text>
         <Text style={styles.info}>DOB: {profile?.dob}</Text>
-        <View style={styles.buttonsContainer }>
+        <View style={styles.buttonsContainer}>
           <TouchableOpacity onPress={() => setEditing(true)} style={styles.editBtn}>
             <Text style={{ color: '#fff' }}>Edit Profile</Text>
           </TouchableOpacity>
@@ -164,16 +156,16 @@ export default function ProfileScreen({ navigation }) {
             <Text style={{ color: '#fff' }}>Logout</Text>
           </TouchableOpacity>
         </View>
-        
       </View>
 
       {editing && (
         <View style={styles.card}>
           <Text style={styles.heading}>Update Details</Text>
+          <TextInput placeholder="Name" value={name} onChangeText={setName} style={styles.input} />
           <TextInput placeholder="DOB" value={dob} onChangeText={setDob} style={styles.input} />
           <TextInput placeholder="Branch" value={branch} onChangeText={setBranch} style={styles.input} />
           <TextInput placeholder="Course" value={course} onChangeText={setCourse} style={styles.input} />
-  
+
           <TouchableOpacity onPress={handleUpdate} style={styles.updateBtn}>
             <Text style={{ color: '#fff' }}>Save Changes</Text>
           </TouchableOpacity>
@@ -241,7 +233,6 @@ const styles = StyleSheet.create({
   buttonsContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-
     marginTop: 10,
   },
   editBtn: {

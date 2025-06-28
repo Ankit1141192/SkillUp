@@ -1,3 +1,4 @@
+// App.js
 
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
@@ -5,16 +6,18 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-
+// Screens
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import HomeScreen from './screens/HomeScreen';
+import CourseScreen from './screens/CourseScreen';
 import ProgressScreen from './screens/ProgressScreen';
 import ChatScreen from './screens/ChatScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import HomeQuizScreen from './screens/HomeQuizScreen';
+import QuizScreen from './screens/QuizScreen';
+import ResultsScreen from './screens/ResultScreen';
 
-
-// Create Navigators
 const RootStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
@@ -23,17 +26,47 @@ const ProgressStack = createStackNavigator();
 const ChatStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 
-// Home Stack
+// Home Stack (with CourseScreen)
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
-   
       <HomeStack.Screen
         name="HomeMain"
         component={HomeScreen}
         options={{
           title: 'SkillUp',
-          headerLeft: () => null, 
+          gestureEnabled: false,
+        }}
+      />
+      <HomeStack.Screen
+        name="CourseScreen"
+        component={CourseScreen}
+        options={({ route }) => ({
+          title: route.params?.course?.name || 'Course Detail',
+        })}
+      />
+      <HomeStack.Screen
+        name="HomeQuizScreen"
+        component={HomeQuizScreen} // ✅ FIXED: Correct component
+        options={{
+          title: 'Quiz',
+          gestureEnabled: false,
+        }}
+      />
+      <HomeStack.Screen
+        name="QuizScreen"
+        component={QuizScreen}
+        options={{
+          title: 'Quiz',
+          gestureEnabled: false,
+        }}
+      />
+      <HomeStack.Screen
+        name="ResultsScreen"
+        component={ResultsScreen}
+        options={{
+          title: 'Results',
+          gestureEnabled: false,
         }}
       />
     </HomeStack.Navigator>
@@ -47,7 +80,10 @@ function ProgressStackScreen() {
       <ProgressStack.Screen
         name="ProgressMain"
         component={ProgressScreen}
-        options={{ title: 'Progress',headerLeft: () => null, }}
+        options={{
+          title: 'Progress',
+          gestureEnabled: false,
+        }}
       />
     </ProgressStack.Navigator>
   );
@@ -60,7 +96,10 @@ function ChatStackScreen() {
       <ChatStack.Screen
         name="ChatMain"
         component={ChatScreen}
-        options={{ title: 'Chat',headerLeft: () => null}}
+        options={{
+          title: 'Chat',
+          gestureEnabled: false,
+        }}
       />
     </ChatStack.Navigator>
   );
@@ -73,13 +112,16 @@ function ProfileStackScreen() {
       <ProfileStack.Screen
         name="ProfileMain"
         component={ProfileScreen}
-        options={{ title: 'Profile',headerLeft: () => null }}
+        options={{
+          title: 'Profile',
+          gestureEnabled: false,
+        }}
       />
     </ProfileStack.Navigator>
   );
 }
 
-// Main Tabs
+// Bottom Tabs with Icons
 function MainTabs() {
   return (
     <Tab.Navigator
@@ -87,6 +129,7 @@ function MainTabs() {
         headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
+
           if (route.name === 'HomeTab') iconName = focused ? 'home' : 'home-outline';
           else if (route.name === 'ProgressTab') iconName = focused ? 'bar-chart' : 'bar-chart-outline';
           else if (route.name === 'ChatTab') iconName = focused ? 'chatbubble' : 'chatbubble-outline';
@@ -106,27 +149,14 @@ function MainTabs() {
   );
 }
 
-// Root Stack (Login, Register, Main)
+// App Root Stack
 export default function App() {
   return (
     <NavigationContainer>
-      
       <RootStack.Navigator initialRouteName="Login">
-        <RootStack.Screen
-          name="Login"
-          component={LoginScreen}
-          options={{ headerShown: false }}
-        />
-        <RootStack.Screen
-          name="Register"
-          component={RegisterScreen}
-          options={{ headerShown: false }}
-        />
-        <RootStack.Screen
-          name="MainTabs"
-          component={MainTabs}
-          options={{ headerShown: false }}
-        />
+        <RootStack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
+        <RootStack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
+        <RootStack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       </RootStack.Navigator>
     </NavigationContainer>
   );

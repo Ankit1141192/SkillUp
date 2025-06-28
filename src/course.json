@@ -150,7 +150,21 @@
                 "id": "course1",
                 "instructor": "Chandra Shekhar",
                 "name": "React Fundamentals",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Introduction to React",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn the basics of React, including components, props, and state."
+                    },
+                    "2": {
+                        "title": "Advanced React",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Dive deeper into React with hooks, context API, and performance optimization."
+                    }
+                }
             },
             "course2": {
                 "code": "CS205",
@@ -161,7 +175,21 @@
                 "id": "course2",
                 "instructor": "Shreshth Kumar",
                 "name": "Advanced JavaScript",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "JavaScript Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Understand the core concepts of JavaScript, including variables, functions, and scope."
+                    },
+                    "2": {
+                        "title": "Asynchronous JavaScript",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Learn about callbacks, promises, and async/await in JavaScript."
+                    }
+                }
             },
             "course3": {
                 "code": "DS100",
@@ -172,7 +200,21 @@
                 "id": "course3",
                 "instructor": "Ankit Kumar",
                 "name": "UI/UX Design Principles",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "UI Design Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn the principles of user interface design, including layout, color theory, and typography."
+                    },
+                    "2": {
+                        "title": "UX Research and Testing",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand user research methods and usability testing techniques."
+                    }
+                }
             },
             "course4": {
                 "code": "CS405",
@@ -183,7 +225,21 @@
                 "id": "course4",
                 "instructor": "VenuGopal Burli",
                 "name": "Backend Development with Node.js",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Node.js Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn the basics of Node.js, including modules, npm, and event-driven programming."
+                    },
+                    "2": {
+                        "title": "Building RESTful APIs",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Create RESTful APIs using Express.js and integrate with MongoDB."
+                    }
+                }
             }
         },
         "SkillBased": {
@@ -196,7 +252,21 @@
                 "id": "course5",
                 "instructor": "Nitin Kumar Singh",
                 "name": "Data Structures and Algorithms",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Data Structures Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about arrays, linked lists, stacks, and queues."
+                    },
+                    "2": {
+                        "title": "Algorithms Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand sorting algorithms, searching algorithms, and complexity analysis."
+                    }
+                }
             },
             "course6": {
                 "code": "CS502",
@@ -207,7 +277,21 @@
                 "id": "course6",
                 "instructor": "VenuGopal Punchmarthi",
                 "name": "Advanced Data Structures and Algorithms",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Advanced Data Structures",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Explore trees, graphs, and hash tables in depth."
+                    },
+                    "2": {
+                        "title": "Algorithm Design Techniques",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Learn about dynamic programming, greedy algorithms, and backtracking."
+                    }
+                }
             },
             "course7": {
                 "code": "CS503",
@@ -217,7 +301,21 @@
                 "description": "Introduction to machine learning",
                 "id": "course7",
                 "instructor": "Varun Bhatt",
-                "name": "Machine Learning Fundamentals"
+                "name": "Machine Learning Fundamentals",
+                "part":{
+                    "1": {
+                        "title": "Machine Learning Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Understand supervised and unsupervised learning, and basic algorithms."
+                    },
+                    "2": {
+                        "title": "Model Evaluation and Tuning",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Learn about model evaluation metrics, cross-validation, and hyperparameter tuning."
+                    }
+                }
             },
             "course8": {
                 "code": "CS504",
@@ -228,7 +326,21 @@
                 "id": "course8",
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Deep Learning Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about neural networks, activation functions, and backpropagation."
+                    },
+                    "2": {
+                        "title": "Advanced Topics in Machine Learning",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Explore reinforcement learning, natural language processing, and computer vision."
+                    }
+                }
             }
         },
         "TopRated": {
@@ -241,7 +353,21 @@
                 "id": "course5",
                 "instructor": "Nitin Kumar Singh",
                 "name": "Data Structures and Algorithms",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Data Structures Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about arrays, linked lists, stacks, and queues."
+                    },
+                    "2": {
+                        "title": "Algorithms Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand sorting algorithms, searching algorithms, and complexity analysis."
+                    }
+                }
             },
             "course2": {
                 "code": "CS502",
@@ -252,7 +378,21 @@
                 "id": "course6",
                 "instructor": "Subrata Das",
                 "name": "Mobile App Development with React Native",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "React Native Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about React Native components, navigation, and styling."
+                    },
+                    "2": {
+                        "title": "Building a Mobile App",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Create a complete mobile app using React Native."
+                    }
+                }
             },
             "course3": {
                 "code": "CS503",
@@ -263,7 +403,21 @@
                 "id": "course7",
                 "instructor": "Chandra Shekhar",
                 "name": "React Fundamentals",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "React Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Understand the core concepts of React, including components, props, and state."
+                    },
+                    "2": {
+                        "title": "Advanced React Concepts",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Learn about hooks, context API, and performance optimization."
+                    }
+                }
             },
             "course4": {
                 "code": "CS504",
@@ -274,7 +428,21 @@
                 "id": "course8",
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Machine Learning Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about supervised and unsupervised learning."
+                    },
+                    "2": {
+                        "title": "Deep Learning Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand neural networks and their applications."
+                    }
+                }
             }
         },
         "MostPopular": {
@@ -287,7 +455,21 @@
                 "id": "course8",
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Machine Learning Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about supervised and unsupervised learning."
+                    },
+                    "2": {
+                        "title": "Deep Learning Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand neural networks and their applications."
+                    }
+                }
             },
             "course5": {
                 "code": "CS505",
@@ -298,7 +480,21 @@
                 "id": "course9",
                 "instructor": "Nitin Kumar Singh",
                 "name": "Deep Learning Basics",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Deep Learning Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about neural networks, activation functions, and backpropagation."
+                    },
+                    "2": {
+                        "title": "Convolutional Neural Networks",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand CNNs and their applications in image processing."
+                    }
+                }
             },
             "course6": {
                 "code": "CS506",
@@ -309,7 +505,21 @@
                 "id": "course10",
                 "instructor": "Nitin Kumar Singh",
                 "name": "Advanced Deep Learning",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Recurrent Neural Networks",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about RNNs and their applications in sequence data."
+                    },
+                    "2": {
+                        "title": "Generative Adversarial Networks",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand GANs and their use in generating synthetic data."
+                    }
+                }
             },
             "course7": {
                 "code": "CS507",
@@ -320,7 +530,21 @@
                 "id": "course11",
                 "instructor": "Chandra Shekhar",
                 "name": "Natural Language Processing Basics",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Natural Language Processing Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about tokenization, stemming, and lemmatization."
+                    },
+                    "2": {
+                        "title": "Advanced NLP Techniques",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand transformers and their applications in NLP."
+                    }
+                }
             }
         },
         "NewArrivals": {
@@ -334,6 +558,7 @@
                 "instructor": "Ankit Kumar",
                 "name": "Computer Vision Basics",
                 "term": "Spring 2025"
+              
             },
             "course9": {
                 "code": "CS509",
@@ -379,7 +604,21 @@
                 "id": "course16",
                 "instructor": "Varun Bhatt",
                 "name": "Big Data Fundamentals",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Big Data Basics",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about big data concepts, tools, and technologies."
+                    },
+                    "2": {
+                        "title": "Big Data Processing",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand data processing frameworks like Hadoop and Spark."
+                    }
+                }
             },
             "course13": {
                 "code": "CS513",
@@ -390,7 +629,21 @@
                 "id": "course17",
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Big Data Analytics",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Big Data Analytics Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about data visualization and exploratory data analysis."
+                    },
+                    "2": {
+                        "title": "Advanced Big Data Techniques",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand machine learning techniques for big data."
+                    }
+                }
             },
             "course14": {
                 "code": "CS514",
@@ -401,7 +654,21 @@
                 "id": "course18",
                 "instructor": "Nitin Kumar Singh",
                 "name": "Cloud Computing Basics",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "Cloud Computing Fundamentals",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about cloud service models and deployment strategies."
+                    },
+                    "2": {
+                        "title": "Advanced Cloud Solutions",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand cloud-native application development and microservices."
+                    }
+                }
             },
             "course15": {
                 "code": "CS515",
@@ -412,7 +679,21 @@
                 "id": "course19",
                 "instructor": "Nitin Kumar Singh",
                 "name": "DevOps Fundamentals",
-                "term": "Spring 2025"
+                "term": "Spring 2025",
+                "part":{
+                    "1": {
+                        "title": "DevOps Overview",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "2 weeks",
+                        "content": "Learn about DevOps principles and practices."
+                    },
+                    "2": {
+                        "title": "Continuous Integration and Deployment",
+                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "duration": "3 weeks",
+                        "content": "Understand CI/CD pipelines and tools."
+                    }
+                }
             }
         }
     },
