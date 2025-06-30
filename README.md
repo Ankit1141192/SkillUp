@@ -1,97 +1,67 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📚 SkillUp – E-Learning Mobile App
 
-# Getting Started
+**SkillUp** is an engaging and user-friendly **E-learning mobile application** built using **React Native**. It is designed to provide a seamless learning experience for users with key features like user authentication, course progress tracking, quizzes, real-time chat, and video content integration. The goal of SkillUp is to make learning interactive, accessible, and mobile-first.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📲 Download the APK
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+You can download and install the SkillUp app on any Android device using the link below:
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+➡️ **[Click Here to Download SkillUp APK](https://drive.google.com/uc?export=download&id=1nDNxRXu9WLZ7nl2b1ug7uXDB_VOX-CnL)**
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
-```
+## ⚙️ How to Install the APK (Android)
 
-## Step 2: Build and run your app
+1. Click the download link above.
+2. If downloaded on your PC, transfer the APK to your Android device.
+3. On your Android device, go to **Settings > Security > Install from Unknown Sources** and enable it.
+4. Locate the APK file and tap to install.
+5. Launch the **SkillUp** app and enjoy learning on the go!
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+---
 
-### Android
+## 📸 Screenshots
 
-```sh
-# Using npm
-npm run android
+Here are some preview screenshots from the SkillUp application:
 
-# OR using Yarn
-yarn android
-```
+| Login Screen | Register Screen | Home Screen |
+|--------------|------------------|-------------|
+|![SkillUp1](https://github.com/user-attachments/assets/701d574b-97a8-4dee-9489-58b53c4ac706)| ![SkillUp2](https://github.com/user-attachments/assets/1a290424-1818-4609-8561-6a339ccac318)|![SkillUp4](https://github.com/user-attachments/assets/fbaccadb-33ff-48f4-9277-2fad648df27a)
+ |
 
-### iOS
+| Progress Screen | Quiz Screen | Profile Screen | 
+|------------------|--------------|-------------|
+|![SkillUp6](https://github.com/user-attachments/assets/29fd7d4b-dfa3-4bf7-aca5-e1c04b9c645f)|![SkillUp7](https://github.com/user-attachments/assets/e855455a-09e4-4338-8e94-29916f50603b)|![SkillUp8](https://github.com/user-attachments/assets/48b216e2-f85b-4182-9093-264aafe133e6)
+|
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+> 🔸 All screenshots are located in the `assets/screenshots/` folder. Make sure to add these images if you're cloning the repo.
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+---
 
-```sh
-bundle install
-```
+## 🧑‍💻 How to Install and Run the Project Locally
 
-Then, and every time you update your native dependencies, run:
+Want to explore or contribute to the source code? Follow these steps to set up the project locally.
 
-```sh
-bundle exec pod install
-```
+### 🔧 Prerequisites
+- React Native CLI
+- Android Studio / Emulator setup
+- Firebase project with configuration
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+### 🛠️ Installation Steps
 
-```sh
-# Using npm
-npm run ios
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/skillup-app.git
 
-# OR using Yarn
-yarn ios
-```
+# 2. Navigate to the project directory
+cd skillup-app
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+# 3. Install dependencies
+npm install
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+# 4. Connect your Android device or open an emulator
 
-## Step 3: Modify your app
-
-Now that you have successfully run the app, let's make changes!
-
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
-
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
-
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# 5. Run the app on Android
+npx react-native run-android
