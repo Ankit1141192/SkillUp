@@ -4,6 +4,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import SearchScreen from './screens/SearchScreen';
+
 
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
@@ -47,10 +49,35 @@ const ProfileStack = createStackNavigator();
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen name="HomeMain" component={HomeScreen} options={{ title: 'SkillUp', gestureEnabled: false }} />
-      <HomeStack.Screen name="CourseScreen" component={CourseScreen} options={({ route }) => ({
-        title: route.params?.course?.name || 'Course Detail',
-      })} />
+      <HomeStack.Screen
+        name="HomeMain"
+        component={HomeScreen}
+        options={({ navigation }) => ({
+          title: 'SkillUp',
+          gestureEnabled: false,
+          headerRight: () => (
+            <Icon
+              name="search"
+              size={24}
+              color="#68a8e3"
+              style={{ marginRight: 16 }}
+              onPress={() => navigation.navigate('SearchScreen')}
+            />
+          ),
+        })}
+      />
+      <HomeStack.Screen
+        name="CourseScreen"
+        component={CourseScreen}
+        options={({ route }) => ({
+          title: route.params?.course?.name || 'Course Detail',
+        })}
+      />
+      <HomeStack.Screen
+        name="SearchScreen"
+        component={SearchScreen}
+        options={{ title: 'Search Courses' }}
+      />
       <HomeStack.Screen name="HomeQuiz" component={HomeQuizScreen} options={{ title: 'Quiz', gestureEnabled: false }} />
       <HomeStack.Screen name="QuizScreen" component={QuizScreen} options={{ title: 'Quiz', gestureEnabled: false }} />
       <HomeStack.Screen name="ResultsScreen" component={ResultsScreen} options={{ title: 'Results', gestureEnabled: false }} />
