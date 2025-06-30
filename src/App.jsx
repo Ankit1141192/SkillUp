@@ -54,7 +54,6 @@ function HomeStackScreen() {
         component={HomeScreen}
         options={({ navigation }) => ({
           title: 'SkillUp',
-          gestureEnabled: false,
           headerRight: () => (
             <Icon
               name="search"
