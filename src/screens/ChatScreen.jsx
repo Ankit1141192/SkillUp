@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     height: 40,
   },
   sendButton: {
-    backgroundColor: '#34A853',
+    backgroundColor: '#68a8e3',
     borderRadius: 20,
     paddingHorizontal: 15,
     justifyContent: 'center',
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     maxWidth: '75%',
   },
   userBubble: {
-    backgroundColor: '#DCF8C6',
+    backgroundColor: '#DCF8c4',
     alignSelf: 'flex-end',
   },
   otherBubble: {

@@ -47,7 +47,7 @@ export default function RegisterScreen({ navigation }) {
       {/* CONTENT */}
       <View style={styles.content}>
         <Text style={styles.title}>Create Your Account ✨</Text>
-        <Text style={styles.subtitle}>Join SkillUP and start your journey 🚀</Text>
+        <Text style={styles.subtitle}>Join SkillUP and start your journey</Text>
 
         <TextInput
           style={styles.input}

@@ -1,10 +1,9 @@
-// screens/QuizScreen.js
-
-import { StyleSheet, Text, SafeAreaView, View, Pressable } from "react-native";
+import { StyleSheet, Text, SafeAreaView, View, Pressable,ScrollView } from "react-native";
 import React, { useState, useEffect } from "react";
 import questions from "../data/Questions";
 import { useNavigation } from "@react-navigation/native";
 import AntDesign from "react-native-vector-icons/AntDesign";
+
 
 const QuizScreen = () => {
   const navigation = useNavigation();
@@ -16,7 +15,10 @@ const QuizScreen = () => {
   const [answerStatus, setAnswerStatus] = useState(null);
   const [answers, setAnswers] = useState([]);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+  const [showCorrectAnswer, setShowCorrectAnswer] = useState(false);
   const [counter, setCounter] = useState(15);
+
+  const currentQuestion = data[index];
 
   useEffect(() => {
     if (selectedAnswerIndex !== null) {
@@ -24,6 +26,10 @@ const QuizScreen = () => {
       setPoints((prev) => (isCorrect ? prev + 5 : prev));
       setAnswerStatus(isCorrect);
       setAnswers([...answers, { question: index + 1, answer: isCorrect }]);
+
+      if (!isCorrect) {
+        setShowCorrectAnswer(true);
+      }
     }
   }, [selectedAnswerIndex]);
 
@@ -38,28 +44,29 @@ const QuizScreen = () => {
     return () => clearTimeout(timer);
   }, [counter]);
 
-  const goToNextQuestion = () => {
-    setIndex((prev) => prev + 1);
-    setCounter(15);
-    setAnswerStatus(null);
-    setSelectedAnswerIndex(null);
-  };
-
   useEffect(() => {
     if (index >= totalQuestions) {
       navigation.replace("ResultsScreen", { points, answers });
     }
   }, [index]);
 
-  const currentQuestion = data[index];
+  const goToNextQuestion = () => {
+    setIndex((prev) => prev + 1);
+    setCounter(15);
+    setAnswerStatus(null);
+    setSelectedAnswerIndex(null);
+    setShowCorrectAnswer(false);
+  };
+
   if (!currentQuestion) return null;
 
   const progressPercentage = Math.floor((index / totalQuestions) * 100);
 
   return (
     <SafeAreaView>
+     <ScrollView>
       <View style={styles.headerRow}>
-        <Text>Quiz Challenge</Text>
+        <Text style={styles.heading}>Quiz Challenge</Text>
         <Pressable style={styles.timerBox}>
           <Text style={styles.timerText}>{counter}</Text>
         </Pressable>
@@ -67,18 +74,11 @@ const QuizScreen = () => {
 
       <View style={styles.progressRow}>
         <Text>Your Progress</Text>
-        <Text>
-          ({index}/{totalQuestions}) questions answered
-        </Text>
+        <Text>({index}/{totalQuestions}) questions answered</Text>
       </View>
 
       <View style={styles.progressBarWrapper}>
-        <Text
-          style={[
-            styles.progressBar,
-            { width: `${progressPercentage}%` },
-          ]}
-        />
+        <Text style={[styles.progressBar, { width: `${progressPercentage}%` }]} />
       </View>
 
       <View style={styles.questionBox}>
@@ -88,14 +88,13 @@ const QuizScreen = () => {
             const isCorrect = optionIndex === currentQuestion.correctAnswerIndex;
             const isSelected = selectedAnswerIndex === optionIndex;
 
-            const backgroundColor =
-              selectedAnswerIndex === null
-                ? "#fff"
-                : isSelected && isCorrect
-                ? "green"
-                : isSelected && !isCorrect
-                ? "red"
-                : "#fff";
+            const backgroundColor = (() => {
+              if (selectedAnswerIndex === null) return "#fff";
+              if (isSelected && isCorrect) return "green";
+              if (isSelected && !isCorrect) return "red";
+              if (!isSelected && isCorrect && showCorrectAnswer) return "green";
+              return "#fff";
+            })();
 
             return (
               <Pressable
@@ -124,7 +123,7 @@ const QuizScreen = () => {
       {answerStatus !== null && (
         <View style={styles.feedbackBox}>
           <Text style={styles.feedbackText}>
-            {answerStatus ? "Correct Answer" : "Wrong Answer"}
+            {answerStatus ? "✅ Correct Answer" : "❌ Wrong Answer"}
           </Text>
           <Pressable
             onPress={() => {
@@ -142,6 +141,9 @@ const QuizScreen = () => {
           </Pressable>
         </View>
       )}
+       
+
+      </ScrollView>
     </SafeAreaView>
   );
 };
@@ -153,6 +155,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     padding: 10,
+    alignItems: "center",
+  },
+  heading: {
+    fontSize: 20,
+    fontWeight: "bold",
   },
   timerBox: {
     padding: 10,
@@ -172,6 +179,7 @@ const styles = StyleSheet.create({
     height: 10,
     marginTop: 20,
     marginLeft: 10,
+    marginRight: 10,
     backgroundColor: "#eee",
     borderRadius: 20,
   },
@@ -185,6 +193,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#F0F8FF",
     padding: 10,
     borderRadius: 6,
+    marginHorizontal: 10,
   },
   questionText: {
     fontSize: 18,
@@ -219,6 +228,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 7,
     alignItems: "center",
+    marginHorizontal: 10,
   },
   feedbackText: {
     fontSize: 17,

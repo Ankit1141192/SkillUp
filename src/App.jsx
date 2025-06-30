@@ -1,12 +1,10 @@
-// App.js
-
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Alert } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-// Screens
 import LoginScreen from './screens/LoginScreen';
 import RegisterScreen from './screens/RegisterScreen';
 import HomeScreen from './screens/HomeScreen';
@@ -17,111 +15,73 @@ import ProfileScreen from './screens/ProfileScreen';
 import HomeQuizScreen from './screens/HomeQuizScreen';
 import QuizScreen from './screens/QuizScreen';
 import ResultsScreen from './screens/ResultScreen';
+import ForgotPass from './screens/ForgotPass';
 
+import messaging from '@react-native-firebase/messaging';
+
+async function requestUserPermission() {
+  const authStatus = await messaging().requestPermission();
+  const enabled =
+    authStatus === messaging.AuthorizationStatus.AUTHORIZED ||
+    authStatus === messaging.AuthorizationStatus.PROVISIONAL;
+
+  if (enabled && __DEV__) {
+    console.log('✅ Authorization status:', authStatus);
+  }
+}
+
+const getToken = async () => {
+  const token = await messaging().getToken();
+  if (__DEV__) console.log('📲 FCM Token =', token);
+};
+
+// STACKS
 const RootStack = createStackNavigator();
 const Tab = createBottomTabNavigator();
-
 const HomeStack = createStackNavigator();
 const ProgressStack = createStackNavigator();
 const ChatStack = createStackNavigator();
 const ProfileStack = createStackNavigator();
 
-// Home Stack (with CourseScreen)
+// STACK SCREENS
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator>
-      <HomeStack.Screen
-        name="HomeMain"
-        component={HomeScreen}
-        options={{
-          title: 'SkillUp',
-          gestureEnabled: false,
-        }}
-      />
-      <HomeStack.Screen
-        name="CourseScreen"
-        component={CourseScreen}
-        options={({ route }) => ({
-          title: route.params?.course?.name || 'Course Detail',
-        })}
-      />
-      <HomeStack.Screen
-        name="HomeQuizScreen"
-        component={HomeQuizScreen} // ✅ FIXED: Correct component
-        options={{
-          title: 'Quiz',
-          gestureEnabled: false,
-        }}
-      />
-      <HomeStack.Screen
-        name="QuizScreen"
-        component={QuizScreen}
-        options={{
-          title: 'Quiz',
-          gestureEnabled: false,
-        }}
-      />
-      <HomeStack.Screen
-        name="ResultsScreen"
-        component={ResultsScreen}
-        options={{
-          title: 'Results',
-          gestureEnabled: false,
-        }}
-      />
+      <HomeStack.Screen name="HomeMain" component={HomeScreen} options={{ title: 'SkillUp', gestureEnabled: false }} />
+      <HomeStack.Screen name="CourseScreen" component={CourseScreen} options={({ route }) => ({
+        title: route.params?.course?.name || 'Course Detail',
+      })} />
+      <HomeStack.Screen name="HomeQuiz" component={HomeQuizScreen} options={{ title: 'Quiz', gestureEnabled: false }} />
+      <HomeStack.Screen name="QuizScreen" component={QuizScreen} options={{ title: 'Quiz', gestureEnabled: false }} />
+      <HomeStack.Screen name="ResultsScreen" component={ResultsScreen} options={{ title: 'Results', gestureEnabled: false }} />
     </HomeStack.Navigator>
   );
 }
 
-// Progress Stack
 function ProgressStackScreen() {
   return (
     <ProgressStack.Navigator>
-      <ProgressStack.Screen
-        name="ProgressMain"
-        component={ProgressScreen}
-        options={{
-          title: 'Progress',
-          gestureEnabled: false,
-        }}
-      />
+      <ProgressStack.Screen name="ProgressMain" component={ProgressScreen} options={{ title: 'Progress', gestureEnabled: false }} />
     </ProgressStack.Navigator>
   );
 }
 
-// Chat Stack
 function ChatStackScreen() {
   return (
     <ChatStack.Navigator>
-      <ChatStack.Screen
-        name="ChatMain"
-        component={ChatScreen}
-        options={{
-          title: 'Chat',
-          gestureEnabled: false,
-        }}
-      />
+      <ChatStack.Screen name="ChatMain" component={ChatScreen} options={{ title: 'Chat', gestureEnabled: false }} />
     </ChatStack.Navigator>
   );
 }
 
-// Profile Stack
 function ProfileStackScreen() {
   return (
     <ProfileStack.Navigator>
-      <ProfileStack.Screen
-        name="ProfileMain"
-        component={ProfileScreen}
-        options={{
-          title: 'Profile',
-          gestureEnabled: false,
-        }}
-      />
+      <ProfileStack.Screen name="ProfileMain" component={ProfileScreen} options={{ title: 'Profile', gestureEnabled: false }} />
     </ProfileStack.Navigator>
   );
 }
 
-// Bottom Tabs with Icons
 function MainTabs() {
   return (
     <Tab.Navigator
@@ -129,12 +89,10 @@ function MainTabs() {
         headerShown: false,
         tabBarIcon: ({ focused, color, size }) => {
           let iconName;
-
           if (route.name === 'HomeTab') iconName = focused ? 'home' : 'home-outline';
           else if (route.name === 'ProgressTab') iconName = focused ? 'bar-chart' : 'bar-chart-outline';
           else if (route.name === 'ChatTab') iconName = focused ? 'chatbubble' : 'chatbubble-outline';
           else if (route.name === 'ProfileTab') iconName = focused ? 'person' : 'person-outline';
-
           return <Icon name={iconName} size={size} color={color} />;
         },
         tabBarActiveTintColor: '#68a8e3',
@@ -149,13 +107,40 @@ function MainTabs() {
   );
 }
 
-// App Root Stack
 export default function App() {
+  useEffect(() => {
+    requestUserPermission();
+    getToken();
+
+    // Handle foreground notifications
+    const unsubscribeOnMessage = messaging().onMessage(async remoteMessage => {
+      Alert.alert('New Notification', remoteMessage?.notification?.title || '', remoteMessage?.notification?.body ? [{ text: remoteMessage.notification.body }] : []);
+    });
+
+    // Handle background/quit notification click (optional)
+    messaging()
+      .getInitialNotification()
+      .then(remoteMessage => {
+        if (remoteMessage) {
+          console.log('Notification caused app to open from quit state:', remoteMessage.notification);
+        }
+      });
+
+    messaging().onNotificationOpenedApp(remoteMessage => {
+      console.log('Notification caused app to open from background state:', remoteMessage.notification);
+    });
+
+    return () => {
+      unsubscribeOnMessage();
+    };
+  }, []);
+
   return (
     <NavigationContainer>
       <RootStack.Navigator initialRouteName="Login">
         <RootStack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
         <RootStack.Screen name="Register" component={RegisterScreen} options={{ headerShown: false }} />
+        <RootStack.Screen name="Forgot" component={ForgotPass} options={{ headerShown: false }} />
         <RootStack.Screen name="MainTabs" component={MainTabs} options={{ headerShown: false }} />
       </RootStack.Navigator>
     </NavigationContainer>

@@ -15,7 +15,7 @@ import backGroundImage from '../assets/backGround.png';
 import auth from '@react-native-firebase/auth';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 
-const { width, height } = Dimensions.get('window'); 
+const { width, height } = Dimensions.get('window');
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState('');
@@ -27,7 +27,7 @@ export default function LoginScreen({ navigation }) {
 
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId: '440843993927-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com', 
+      webClientId: '440843993927-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com',
     });
   }, []);
 
@@ -53,52 +53,53 @@ export default function LoginScreen({ navigation }) {
   };
 
   return (
-  
-  <SafeAreaView style={styles.login}>
-    <StatusBar barStyle="dark-content" />
-    <Image
-      source={backGroundImage}
-      style={[styles.backgroundImage, { width, height }]}
-    />
-
-    {/* All content in center */}
-    <View style={styles.content}>
-      <Text style={styles.title}>Welcome to SkillUP</Text>
-      <Text style={styles.subtitle}>Learn. Grow. Shine. Your journey starts here!</Text>
-
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Email"
-        value={email}
-        onChangeText={setEmail}
-        keyboardType="email-address"
-        autoCapitalize="none"
+    <SafeAreaView style={styles.login}>
+      <StatusBar barStyle="dark-content" />
+      <Image
+        source={backGroundImage}
+        style={[styles.backgroundImage, { width, height }]}
       />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Enter Password"
-        value={password}
-        onChangeText={setPassword}
-        secureTextEntry
-      />
+      <View style={styles.content}>
+        <Text style={styles.title}>Welcome to SkillUP</Text>
+        <Text style={styles.subtitle}>Learn. Grow. Shine. Your journey starts here!</Text>
 
-      <TouchableOpacity style={styles.loginBtn} onPress={handleLogin}>
-        <Text style={styles.loginText}>Login</Text>
-      </TouchableOpacity>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Email"
+          value={email}
+          onChangeText={setEmail}
+          keyboardType="email-address"
+          autoCapitalize="none"
+        />
 
-      <TouchableOpacity style={styles.googleBtn} onPress={handleGoogleLogin}>
-        <Image source={googleIcon} style={styles.googleIcon} />
-        <Text style={styles.googleText}>Continue with Google</Text>
-      </TouchableOpacity>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter Password"
+          value={password}
+          onChangeText={setPassword}
+          secureTextEntry
+        />
 
-      <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-        <Text style={styles.registerText}>Don’t have an account? Register</Text>
-      </TouchableOpacity>
-    </View>
-  </SafeAreaView>
+        <TouchableOpacity onPress={() => navigation.navigate('Forgot')}>
+          <Text style={styles.forgotText}>Forgot Password?</Text>
+        </TouchableOpacity>
 
 
+        <TouchableOpacity style={styles.loginBtn} onPress={handleLogin}>
+          <Text style={styles.loginText}>Login</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.googleBtn} onPress={handleGoogleLogin}>
+          <Image source={googleIcon} style={styles.googleIcon} />
+          <Text style={styles.googleText}>Continue with Google</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
+          <Text style={styles.registerText}>Don’t have an account? Register</Text>
+        </TouchableOpacity>
+      </View>
+    </SafeAreaView>
   );
 }
 
@@ -125,7 +126,6 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 16,
-    fontFamily: 'outfit',
     color: '#666',
     marginBottom: 30,
     textAlign: 'center',
@@ -139,6 +139,13 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     paddingHorizontal: 15,
     backgroundColor: '#f9f9f9',
+  },
+  forgotText: {
+    color: '#0066cc',
+    fontSize: 14,
+    alignSelf: 'flex-end',
+    marginBottom: 10,
+    marginRight: 25,
   },
   loginBtn: {
     backgroundColor: '#007bff',

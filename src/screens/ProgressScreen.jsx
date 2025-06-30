@@ -43,22 +43,26 @@ const ProgressScreen = () => {
         ))}
       </View>
 
-      <Pressable onPress={() => navigation.navigate('HomeQuizScreen')}
-  style={{
-    backgroundColor: "magenta",
-    padding: 14,
-    width: 150,
-    borderRadius: 25,
-    marginLeft: "auto",
-    marginRight: "auto",
-    marginTop: 30,
-  }}
->
-  <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>
-    Start Quiz
-  </Text>
-</Pressable>
-
+      <Pressable
+        onPress={() =>
+          navigation.navigate("HomeTab", {
+            screen: "HomeQuiz",
+          })
+        }
+        style={{
+          backgroundColor: "magenta",
+          padding: 14,
+          width: 150,
+          borderRadius: 25,
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginTop: 30,
+        }}
+      >
+        <Text style={{ color: "white", fontWeight: "600", textAlign: "center" }}>
+          Start Quiz
+        </Text>
+      </Pressable>
     </View>
   );
 };

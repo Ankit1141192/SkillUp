@@ -151,16 +151,16 @@
                 "instructor": "Chandra Shekhar",
                 "name": "React Fundamentals",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Introduction to React",
-                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "youtubeLink": "https://youtu.be/BLl32FvcdVM?si=JYXvjiqG61wr4oDD",
                         "duration": "2 weeks",
                         "content": "Learn the basics of React, including components, props, and state."
                     },
                     "2": {
                         "title": "Advanced React",
-                        "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
+                        "youtubeLink": "https://youtu.be/BLl32FvcdVM?si=JYXvjiqG61wr4oDD",
                         "duration": "3 weeks",
                         "content": "Dive deeper into React with hooks, context API, and performance optimization."
                     }
@@ -176,7 +176,7 @@
                 "instructor": "Shreshth Kumar",
                 "name": "Advanced JavaScript",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "JavaScript Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -201,7 +201,7 @@
                 "instructor": "Ankit Kumar",
                 "name": "UI/UX Design Principles",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "UI Design Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -226,7 +226,7 @@
                 "instructor": "VenuGopal Burli",
                 "name": "Backend Development with Node.js",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Node.js Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -253,7 +253,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "Data Structures and Algorithms",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Data Structures Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -278,7 +278,7 @@
                 "instructor": "VenuGopal Punchmarthi",
                 "name": "Advanced Data Structures and Algorithms",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Advanced Data Structures",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -302,7 +302,7 @@
                 "id": "course7",
                 "instructor": "Varun Bhatt",
                 "name": "Machine Learning Fundamentals",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Machine Learning Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -327,7 +327,7 @@
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Deep Learning Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -354,7 +354,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "Data Structures and Algorithms",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Data Structures Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -379,7 +379,7 @@
                 "instructor": "Subrata Das",
                 "name": "Mobile App Development with React Native",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "React Native Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -404,7 +404,7 @@
                 "instructor": "Chandra Shekhar",
                 "name": "React Fundamentals",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "React Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -429,7 +429,7 @@
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Machine Learning Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -456,7 +456,7 @@
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Machine Learning Techniques",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Machine Learning Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -481,7 +481,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "Deep Learning Basics",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Deep Learning Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -506,7 +506,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "Advanced Deep Learning",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Recurrent Neural Networks",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -531,7 +531,7 @@
                 "instructor": "Chandra Shekhar",
                 "name": "Natural Language Processing Basics",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Natural Language Processing Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -558,7 +558,6 @@
                 "instructor": "Ankit Kumar",
                 "name": "Computer Vision Basics",
                 "term": "Spring 2025"
-              
             },
             "course9": {
                 "code": "CS509",
@@ -605,7 +604,7 @@
                 "instructor": "Varun Bhatt",
                 "name": "Big Data Fundamentals",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Big Data Basics",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -630,7 +629,7 @@
                 "instructor": "Varun Bhatt",
                 "name": "Advanced Big Data Analytics",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Big Data Analytics Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -655,7 +654,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "Cloud Computing Basics",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "Cloud Computing Fundamentals",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -680,7 +679,7 @@
                 "instructor": "Nitin Kumar Singh",
                 "name": "DevOps Fundamentals",
                 "term": "Spring 2025",
-                "part":{
+                "part": {
                     "1": {
                         "title": "DevOps Overview",
                         "YutubeLink": "<https://www.youtube.com/watch?v=dQw4w9WgXcQ>",
@@ -697,7 +696,6 @@
             }
         }
     },
-    
     "enrollments": {
         "course1": {
             "student1": true,

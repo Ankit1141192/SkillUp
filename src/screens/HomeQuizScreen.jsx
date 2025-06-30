@@ -1,18 +1,19 @@
-// screens/HomeQuizScreen.js
-
-import { StyleSheet, Text, View, Image, Pressable } from "react-native";
+import { StyleSheet, Text, View, Image, Pressable,ScrollView } from "react-native";
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 
 const HomeQuizScreen = () => {
   const navigation = useNavigation();
 
+  const handleStartQuiz = () => {
+    navigation.navigate("QuizScreen");
+  };
   return (
-    <View style={{ marginTop: 15 }}>
+    <ScrollView style={{ marginTop: 15 }}>
       <Image
-        style={{ height: 370, width: "100%", resizeMode: "contain" }}
+        style={{ height: 250, width: "90%", resizeMode: "contain",marginLeft:"5%" }}
         source={{
-          uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9k2hf2J5rbVVpb4Z1Gy4y9D0vWZHQnA1dW6GxHchAKtufJapZ_bJOkZ_ESB3nDoSvgFw&usqp=CAU",
+          uri:"https://cdn.pixabay.com/photo/2017/02/11/22/38/quiz-2058883_1280.png"
         }}
       />
 
@@ -20,20 +21,19 @@ const HomeQuizScreen = () => {
         <Text style={styles.header}>QUIZ RULES</Text>
 
         <View style={styles.rulesBox}>
-          <Text style={styles.rule}>• For each correct answer you get 5 points</Text>
+          <Text style={styles.rule}>• For each correct answer you get 10 points</Text>
           <Text style={styles.rule}>• There is no negative marking for wrong answer</Text>
           <Text style={styles.rule}>• Each question has a time limit of 15 sec</Text>
           <Text style={styles.rule}>• You should answer all the questions compulsorily</Text>
         </View>
       </View>
-
       <Pressable
-        onPress={() => navigation.navigate("QuizScreen")}
+        onPress={handleStartQuiz}
         style={styles.startButton}
       >
         <Text style={styles.startText}>Start Quiz</Text>
       </Pressable>
-    </View>
+    </ScrollView>
   );
 };
 
